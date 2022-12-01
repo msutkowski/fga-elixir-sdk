@@ -4,7 +4,7 @@ defmodule OpenFGA.Mixfile do
   def project do
     [
       app: :openfga_elixir,
-      version: "0.1",
+      version: "0.0.1",
       elixir: "~> 1.10",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
