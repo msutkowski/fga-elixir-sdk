@@ -3,17 +3,13 @@
 
 defmodule OpenFGA.Model.Any do
   @moduledoc """
-  
+
   """
 
   @derive [Poison.Encoder]
-  defstruct [
-    :@type
-  ]
+  defstruct []
 
-  @type t :: %__MODULE__{
-    :@type => String.t | nil
-  }
+  @type t :: %__MODULE__{}
 end
 
 defimpl Poison.Decoder, for: OpenFGA.Model.Any do
@@ -21,4 +17,3 @@ defimpl Poison.Decoder, for: OpenFGA.Model.Any do
     value
   end
 end
-
